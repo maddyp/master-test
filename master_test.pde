@@ -25,7 +25,7 @@ void setup() {
   book = new FSM(carState);}
   
           //HELLO JOEL will i have to put everything for all states in here, ie doing the whole "movie = new Movie(this, "castle.mp4");" 
-          for all movie files or can i do this in the individual states????
+          // for all movie files or can i do this in the individual states????
              //car
              //castle
              //house
