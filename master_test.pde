@@ -24,8 +24,9 @@ void setup() {
   size (1920,1080);
   book = new FSM(carState);}
   
-            //car
-                 //HELLO JOEL will i have to put everything for my car state in here, ie, loading movie files or can i do this in the individual states????
+          //HELLO JOEL will i have to put everything for all states in here, ie doing the whole "movie = new Movie(this, "castle.mp4");" 
+          for all movie files or can i do this in the individual states????
+             //car
              //castle
              //house
 
