@@ -1,9 +1,8 @@
-
 Class FSM;
 FSM book;
-                                //car
-                                //house
-                                //castle
+PImage castle;
+PImage car;
+PImage house;
 
 
 State carState = new State(this, "enterCar", "doCar", "exitCar");
@@ -34,31 +33,45 @@ void draw() {
   book.update();
 }
 
-void enterCarState() {
+void enterCar() {
   println("enter car");
 }
 
-void doCarState() {
-  background(255, 100, 0);
-  println("doing car");
+void doCar() {
+car = loadImage("car.png");
+image(car, 0, 0);
 }
 
-void exitCarState() {
+void exitCar() {
   println("exit Car");
 }
 
-void enterCastleState() {
+void enterCastle() {
   println("enter castle");
 }
 
-void doCastleState() {
-  background(0, 255, 36);
-    println("doing castle");
+void doCastle() {
+castle = loadImage("castle.png");
+image(castle, 0, 0);
 }
 
-void exitCastleState() {
+void exitCastle() {
   println("exit castle");
 }
+
+void enterhouse() {
+  println("enter castle");
+}
+
+void dohouse() {
+house = loadImage("house.png");
+image(house, 0, 0);
+}
+
+void exithouse() {
+  println("exit castle");
+}
+
 
 void mousePressed() {
   if (book.isInState(carState)) {
