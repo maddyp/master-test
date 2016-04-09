@@ -24,11 +24,11 @@ void setup() {
   size (1920,1080);
   book = new FSM(carState);}
   
-                            //car
-                               //HELLO JOEL will i have to put everything for my car state in here, ie, loading movie files or can i do this in the individual states????
-                            //castle
-                            //house
- 
+            //car
+                 //HELLO JOEL will i have to put everything for my car state in here, ie, loading movie files or can i do this in the individual states????
+             //castle
+             //house
+
 void draw() {
   book.update();
 }
